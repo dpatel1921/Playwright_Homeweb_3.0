@@ -25,15 +25,15 @@ jobs:
         dotnet-version: '8.0.x' # Update this if your project uses .NET 6 or 7
 
     - name: Build the project
-      run: dotnet build Playwright_Homeweb_3.0/Playwright_Homeweb_3.0.csproj
+      run: dotnet build Playwright_Homeweb_3.0.csproj
 
     - name: Install Playwright browsers and dependencies
       # The playwright.ps1 script is generated in the output directory after building
       # Ensure the net8.0 path matches your project's target framework
-      run: pwsh Playwright_Homeweb_3.0/bin/Debug/net8.0/playwright.ps1 install --with-deps
+      run: pwsh Playwright_Homeweb_3.0.csproj/bin/Debug/net8.0/playwright.ps1 install --with-deps
 
     - name: Run Playwright tests
-      run: dotnet test Playwright_Homeweb_3.0/Playwright_Homeweb_3.0.csproj --logger "trx;LogFileName=test_results.trx"
+      run: dotnet test Playwright_Homeweb_3.0.csproj --logger "trx;LogFileName=test_results.trx"
 
     - name: Upload Test Results
       if: always() # Ensures the results are uploaded even if a test fails
