@@ -1,0 +1,270 @@
+﻿[
+  {
+    "AlumniUsername": "alumnidemo12@demo.com",
+    "AlumniPassword": "Password!1",
+    "Url": "https://homeweb.ca/alumni",
+    "Search": "Child"
+  },
+
+  {
+    "LSOUsername": "LSOadmin@demo.com",
+    "LSOPassword": "Password!1",
+    "Url": "https://homeweb.ca/map",
+    "Search": "Child"
+  },
+  {
+    "LSOUsername1": "LSOtest@test.com",
+    "LSOPassword1": "Test1234!!",
+    "Url": "https://homeweb.ca/map"
+  },
+  {
+    "EQUsername": "EQadmin@demo.com",
+    "EQPassword": "Password!1",
+    "Url": "https://homeweb.ca/equitable",
+    "Search": "Child"
+  },
+  {
+    "EQUsername1": "EQmanager@demo.com",
+    "EQPassword1": "Password!1",
+    "Url": "https://homeweb.ca/equitable"
+  },
+  {
+    "PBCUsername": "pbcdemo@pbc.ca",
+    "PBCPassword": "Test123$",
+    "Url": "https://homeweb.ca/pbc",
+    "Search": "Child"
+  },
+
+  {
+    "Login": "dsgdemo10@demo.com",
+    "Password": "Password!1",
+    "Url": "https://homeweb.ca"
+  },
+  {
+    "Login": "Empdemo@demo.com",
+    "Password": "Password!1",
+    "Url": "https://homeweb.ca"
+  },
+  {
+    "Login": "Spousedemo@demo.com",
+    "Password": "Password!1",
+    "Url": "https://homeweb.ca"
+  },
+  {
+    "Login": "Dependantdemo@demo.com",
+    "Password": "Password!1",
+    "Url": "https://homeweb.ca"
+  },
+  {
+    "Login": "Otherdemo@demo.com",
+    "Password": "Password!1",
+    "Url": "https://homeweb.ca"
+  },
+  {
+    "Login": "prooftest@test.com",
+    "Password": "Test1234!!",
+    "Url": "https://homeweb.ca"
+  },
+  {
+    "Login": "Arbodemo1@demo.com",
+    "Password": "Password!1",
+    "Url": "https://homeweb.ca"
+  },
+  {
+    "Login": "Powerhub1@demo.com",
+    "Password": "Password!1",
+    "Url": "https://homeweb.ca"
+  },
+  {
+    "Login": "Dalmenydemo1@demo.com",
+    "Password": "Password!1",
+    "Url": "https://homeweb.ca"
+  },
+  {
+    "Login": "Ramdemo1@demo.com",
+    "Password": "Password!1",
+    "Url": "https://homeweb.ca"
+  },
+  {
+    "Login": "Federateddemo1@demo.com",
+    "Password": "Password!1",
+    "Url": "https://homeweb.ca"
+  },
+  {
+    "Login": "Homewooddemo1@demo.com",
+    "Password": "Password!1",
+    "Url": "https://homeweb.ca"
+  },
+  {
+    "Login": "Costcodemo1@demo.com",
+    "Password": "Password!1",
+    "Url": "https://homeweb.ca"
+  },
+
+  {
+    "Login": "Masterdemo1@demo.com",
+    "Password": "Password!1",
+    "Url": "https://homeweb.ca"
+  },
+  {
+    "Login": "Conestogademo1@demo.com",
+    "Password": "Password!1",
+    "Url": "https://homeweb.ca"
+  },
+  {
+    "Login": "Centredemo1@demo.com",
+    "Password": "Password!1",
+    "Url": "https://homeweb.ca"
+  },
+  {
+    "Login": "Mckercherdemo1@demo.com",
+    "Password": "Password!1",
+    "Url": "https://homeweb.ca"
+  },
+
+  {
+    "Login": "Waterloodemo1@demo.com",
+    "Password": "Password!1",
+    "Url": "https://homeweb.ca"
+  },
+
+  {
+    "Login1": "dpatel@homewoodhealth.com",
+    "Password1": "Nissan_123",
+    "Url": "https://homeweb.ca"
+  },
+
+  {
+    "Regname": "Pathfinder Pro Demo",
+    "Regcode": "PPD453",
+    "Url": "https://homeweb.ca",
+    "RegFirstName": "Dave",
+    "RegLastName": "Doe",
+    "RegPassword": "Password!1",
+    "RegMonth": "January",
+    "RegDay": "1",
+    "RegYear": "2000",
+    "RegGender": "Male",
+    "RegPronoun": "He/Him",
+    "RegTitle": "Demo",
+    "RegStart": "2010"
+
+
+  },
+  {
+
+    "Url": "https://homeweb.ca/equitable",
+    "EQPolicy": "754643",
+    "RegFirstName": "Dave",
+    "RegLastName": "Doe",
+    "RegPassword": "Password!1",
+    "RegMonth": "May",
+    "RegDay": "15",
+    "RegYear": "1950",
+    "RegGender": "Male",
+    "RegPronoun": "He/Him",
+    "RegTitle": "Demo",
+    "RegStart": "2010"
+  },
+
+  {
+    "Url": "https://homeweb.ca/map",
+    "RegFirstName": "Dave",
+    "RegLastName": "Doe",
+    "RegPassword": "Password!1",
+    "RegMonth": "May",
+    "RegDay": "15",
+    "RegYear": "1950",
+    "RegGender": "Male",
+    "RegPronoun": "He/Him",
+    "RegTitle": "Demo",
+    "RegStart": "2010"
+
+
+
+
+  },
+  {
+    "RegFirstName": "Dave",
+    "RegLastName": "Doe",
+    "Url": "https://homeweb.ca/alumni",
+    "RegYear": "1950",
+    "RegPassword": "Password!1",
+    "RegCode": "HDP111",
+    "RegProvince": "Ontario",
+    "RegCity": "Guelph",
+    "RegFacility": "Homewood Health Centre",
+    "RegStartYear": "2021",
+    "RegTreatmentName": "I''m not sure"
+  },
+  {
+    "HWLogin": "dsgdemo11@demo.com",
+    "HWPassword": "Password!1",
+    "Url": "https://homeweb.ca",
+    "Search": "Child"
+  },
+  {
+    "Login": "Waterloodemo1@demo.com",
+    "ForgotUsername": "dpatel@homewoodhealth.com",
+    "Url": "https://homeweb.ca"
+  },
+  {
+    "PFLogin": "PPDDemo@demo.com",
+    "PFPassword": "Password!1",
+    "Url": "https://homeweb.ca"
+  },
+  {
+    "PFLogin1": "PCDdemo@demo.com",
+    "PFPassword": "Password!1",
+    "Url": "https://homeweb.ca"
+  },
+  {
+    "PFLogin2": "PCVdemo@demo.com",
+    "PFPassword": "Password!1",
+    "Url": "https://homeweb.ca"
+  },
+  {
+
+    "Regname": "Pacific Blue Cross",
+    "Url": "https://homeweb.ca/pbc",
+    "RegFirstName": "Dave",
+    "RegLastName": "Doe",
+    "RegPassword": "Password!1",
+    "RegMonth": "May",
+    "RegDay": "15",
+    "RegYear": "1950",
+    "RegGender": "Male",
+    "RegPronoun": "He/Him",
+    "RegTitle": "Demo",
+    "RegStart": "2010"
+  },
+  {
+    "HWLogin1": "Empdemo@demo.com",
+    "HWPassword1": "Password!1",
+    "Url": "https://homeweb.ca"
+
+  },
+  {
+    "HWLogin2": "dsgdemo10@demo.com",
+    "HWPassword2": "Password!1",
+    "Url": "https://homeweb.ca"
+
+  },
+
+  {
+    "SentioEmail": "uat-r2025-c15@demo.com",
+    "SentioPassword": "Sentio2025!",
+    "SentioUrl": "https://beta.sentioapp.com/en"
+
+  },
+
+  {
+    "PubEmail": "dpatel@homewoodhealth.com",
+    "PubPassword": "Nissan_123",
+    "PubUrl": "https://api.homewoodhealth.io/en/login",
+    "PubActivityName": "This is Test"
+
+  }
+
+
+]
