@@ -19,11 +19,14 @@ namespace Homeweb_3._0_Tests_New.TestCases
         private ExtentTest test;
         private DateTime time = DateTime.Now;
 
+
         [OneTimeSetUp]
         public void SetUp()
         {
             // Initialize ExtentReports instance
             extent = ExtentManager.GetReporter();
+
+
            
             }
         
@@ -61,6 +64,7 @@ namespace Homeweb_3._0_Tests_New.TestCases
         [Test, TestCaseSource(nameof(LoginJsonData1))]
         public async Task EnbridgeLandingPage(string Url)
         {
+
             await Page.SetViewportSizeAsync(1920, 1080);
             await Page.GotoAsync(Url);
             await Context.ClearCookiesAsync();
@@ -411,14 +415,17 @@ namespace Homeweb_3._0_Tests_New.TestCases
 
         // --- Data Providers ---
 
-    
+
 
         public static IEnumerable<TestCaseData> LoginJsonData1()
         {
-            string jsonString = File.ReadAllText(@"C:\Users\dpatel\source\repos\Playwright_Homeweb_3.0\Testdata\NewDataHomeweb.Json");
+            string baseDir = AppDomain.CurrentDomain.BaseDirectory;
+            string jsonPath = Path.Combine(baseDir, "Testdata", "NewDataHomeweb.Json");
+
+            string jsonString = File.ReadAllText(jsonPath);
             var dataToLoad = JsonSerializer.Deserialize<List<TestCaseJsonData>>(jsonString);
             var filteredData = dataToLoad.Where(data => !string.IsNullOrEmpty(data.EnbridgeUsername)
-                                                        && data.Url == "https://homeweb.ca/en/enbridge");
+                                                         && data.Url == "https://homeweb.ca/en/enbridge");
 
             foreach (var loginData in filteredData)
             {
@@ -428,7 +435,10 @@ namespace Homeweb_3._0_Tests_New.TestCases
 
         public static IEnumerable<TestCaseData> LoginJsonData2()
         {
-            string jsonString = File.ReadAllText(@"C:\Users\dpatel\source\repos\Playwright_Homeweb_3.0\Testdata\NewDataHomeweb.Json");
+
+            string baseDir = AppDomain.CurrentDomain.BaseDirectory;
+            string jsonPath = Path.Combine(baseDir, "Testdata", "NewDataHomeweb.Json");
+            string jsonString = File.ReadAllText(jsonPath);
             var dataToLoad = JsonSerializer.Deserialize<List<TestCaseJsonData>>(jsonString);
             var filteredData = dataToLoad.Where(data => !string.IsNullOrEmpty(data.EnbridgeUsername)
                                                         && !string.IsNullOrEmpty(data.EnbridgePassword)

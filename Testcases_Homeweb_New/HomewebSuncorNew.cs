@@ -420,7 +420,9 @@ namespace Homeweb_3._0_Tests_New.TestCases
 
         public static IEnumerable<TestCaseData> LoginJsonData()
         {
-            string jsonString = File.ReadAllText(@"C:\Users\dpatel\source\repos\Playwright_Homeweb_3.0\Testdata\NewDataHomeweb.Json");
+            string baseDir = AppDomain.CurrentDomain.BaseDirectory;
+            string jsonPath = Path.Combine(baseDir, "Testdata", "NewDataHomeweb.Json");
+            string jsonString = File.ReadAllText(jsonPath);
             var dataToLoad = JsonSerializer.Deserialize<List<TestCaseJsonData>>(jsonString);
             var filteredData = dataToLoad.Where(data => !string.IsNullOrEmpty(data.RegFirstName)
                                                         && !string.IsNullOrEmpty(data.RegLastName)
@@ -436,7 +438,9 @@ namespace Homeweb_3._0_Tests_New.TestCases
 
         public static IEnumerable<TestCaseData> LoginJsonData1()
         {
-            string jsonString = File.ReadAllText(@"C:\Users\dpatel\source\repos\Playwright_Homeweb_3.0\Testdata\NewDataHomeweb.Json");
+            string baseDir = AppDomain.CurrentDomain.BaseDirectory;
+            string jsonPath = Path.Combine(baseDir, "Testdata", "NewDataHomeweb.Json");
+            string jsonString = File.ReadAllText(jsonPath);
             var dataToLoad = JsonSerializer.Deserialize<List<TestCaseJsonData>>(jsonString);
             var filteredData = dataToLoad.Where(data => !string.IsNullOrEmpty(data.SuncorUsername)
                                                         && !string.IsNullOrEmpty(data.SuncorPassword)
@@ -450,7 +454,9 @@ namespace Homeweb_3._0_Tests_New.TestCases
 
         public static IEnumerable<TestCaseData> LoginJsonData2()
         {
-            string jsonString = File.ReadAllText(@"C:\Users\dpatel\source\repos\Playwright_Homeweb_3.0\Testdata\NewDataHomeweb.Json");
+            string baseDir = AppDomain.CurrentDomain.BaseDirectory;
+            string jsonPath = Path.Combine(baseDir, "Testdata", "NewDataHomeweb.Json");
+            string jsonString = File.ReadAllText(jsonPath);
             var dataToLoad = JsonSerializer.Deserialize<List<TestCaseJsonData>>(jsonString);
             var filteredData = dataToLoad.Where(data => !string.IsNullOrEmpty(data.SuncorUsername)
                                                         && !string.IsNullOrEmpty(data.SuncorPassword)
