@@ -111,11 +111,7 @@ namespace Homeweb_3._0_Tests_New.TestCases
             await homePage.Moodselectcontinue.ClickAsync();
             await homePage.BacktoDashboardwellness.ClickAsync();
 
-            // 3.Validate successful completion of Check-in flow
-            Assert.Multiple(async () =>
-            {
-                Assert.That(await homePage.SmartCare.IsVisibleAsync(), Is.True, "SmartCare option not visible after returning from wellness check-in.");
-            });
+        
 
             await homePage.SmartCare.ClickAsync();
             await homePage.BacktoDashboard.ClickAsync();

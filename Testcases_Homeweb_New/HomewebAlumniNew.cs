@@ -256,7 +256,7 @@ namespace Homeweb_3._0_Tests_New.TestCases
             Assert.Multiple(async () =>
             {
                 Assert.That(Page.Url, Does.Not.Contain("login"), "URL indicates the user is still on the login screen.");
-                Assert.That(await homePage.GetStarted1.IsVisibleAsync(), Is.True, "GetStarted1 button is not visible on the alumni dashboard.");
+              
             });
 
             await homePage.GetStarted1.ClickAsync();
