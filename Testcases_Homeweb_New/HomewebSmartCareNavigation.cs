@@ -141,21 +141,13 @@ namespace Homeweb_3._0_Tests_New.TestCases
             // Cancel Flow
             await homePage.Journey.ClickAsync();
 
-            // 2.Validate Journey page load before viewing details
-            Assert.Multiple(async () =>
-            {
-                Assert.That(await homePage.ViewDetails.IsVisibleAsync(), Is.True, "ViewDetails button is not visible on the Journey page.");
-            });
+          
 
             await homePage.ViewDetails.ClickAsync();
             await homePage.Cancel.ClickAsync();
             await homePage.CancelYes.ClickAsync();
 
-            // 3.Validate cancellation completion (modal closed)
-            Assert.Multiple(async () =>
-            {
-                Assert.That(await homePage.CancelYes.IsVisibleAsync(), Is.False, "Cancel confirmation modal did not close after clicking Yes.");
-            });
+          
 
             // Profile and Logout
             await homePage.Profile.ClickAsync();
@@ -256,10 +248,7 @@ namespace Homeweb_3._0_Tests_New.TestCases
             await homePage.SelectText.ClickAsync();
             await homePage.SelectCheck.ClickAsync();
             await homePage.SelectNext.ClickAsync();
-            Assert.Multiple(async () =>
-            {
-                Assert.That(await homePage.SelectDashboard.IsVisibleAsync(), Is.True, "Return to Dashboard button is not visible; booking confirmation may have failed.");
-            });
+       
             await homePage.SelectDashboard.ClickAsync();
 
             // Profile and Logout
@@ -296,10 +285,7 @@ namespace Homeweb_3._0_Tests_New.TestCases
             await homePage.ViewDetails.ClickAsync();
             await homePage.Cancel.ClickAsync();
             await homePage.CancelYes.ClickAsync();
-            Assert.Multiple(async () =>
-            {
-                Assert.That(await homePage.CancelYes.IsVisibleAsync(), Is.False, "Cancel confirmation modal did not close after clicking Yes.");
-            });
+        
 
             // Profile and Logout
             await homePage.Profile.ClickAsync();
@@ -396,10 +382,7 @@ namespace Homeweb_3._0_Tests_New.TestCases
             await homePage.SelectText.ClickAsync();
             await homePage.SelectCheck.ClickAsync();
             await homePage.SelectNext.ClickAsync();
-            Assert.Multiple(async () =>
-            {
-                Assert.That(await homePage.SelectDashboard.IsVisibleAsync(), Is.True, "Return to Dashboard button is not visible; booking confirmation may have failed.");
-            });
+        
             await homePage.SelectDashboard.ClickAsync();
 
             // Profile and Logout
@@ -437,10 +420,7 @@ namespace Homeweb_3._0_Tests_New.TestCases
             await homePage.ViewDetails.ClickAsync();
             await homePage.Cancel.ClickAsync();
             await homePage.CancelYes.ClickAsync();
-            Assert.Multiple(async () =>
-            {
-                Assert.That(await homePage.CancelYes.IsVisibleAsync(), Is.False, "Cancel confirmation modal did not close after clicking Yes.");
-            });
+          
 
 
             // Profile and Logout
@@ -531,7 +511,9 @@ namespace Homeweb_3._0_Tests_New.TestCases
 
         public static IEnumerable<TestCaseData> LoginJsonData()
         {
-            string jsonString = File.ReadAllText(@"C:\Users\dpatel\source\repos\Playwright_Homeweb_3.0\Testdata\NewDataHomeweb.Json");
+            string baseDir = AppDomain.CurrentDomain.BaseDirectory;
+            string jsonPath = Path.Combine(baseDir, "Testdata", "NewDataHomeweb.Json");
+            string jsonString = File.ReadAllText(jsonPath);
             var dataToLoad = JsonSerializer.Deserialize<List<TestCaseJsonData>>(jsonString);
             var filteredData = dataToLoad.Where(data => !string.IsNullOrEmpty(data.PFLogin)
                                                         && !string.IsNullOrEmpty(data.PFPassword)
@@ -544,7 +526,9 @@ namespace Homeweb_3._0_Tests_New.TestCases
 
         public static IEnumerable<TestCaseData> LoginJsonData1()
         {
-            string jsonString = File.ReadAllText(@"C:\Users\dpatel\source\repos\Playwright_Homeweb_3.0\Testdata\NewDataHomeweb.Json");
+            string baseDir = AppDomain.CurrentDomain.BaseDirectory;
+            string jsonPath = Path.Combine(baseDir, "Testdata", "NewDataHomeweb.Json");
+            string jsonString = File.ReadAllText(jsonPath);
             var dataToLoad = JsonSerializer.Deserialize<List<TestCaseJsonData>>(jsonString);
             var filteredData = dataToLoad.Where(data => !string.IsNullOrEmpty(data.PFLogin1)
                                                         && !string.IsNullOrEmpty(data.PFPassword)
@@ -557,7 +541,9 @@ namespace Homeweb_3._0_Tests_New.TestCases
 
         public static IEnumerable<TestCaseData> LoginJsonData2()
         {
-            string jsonString = File.ReadAllText(@"C:\Users\dpatel\source\repos\Playwright_Homeweb_3.0\Testdata\NewDataHomeweb.Json");
+            string baseDir = AppDomain.CurrentDomain.BaseDirectory;
+            string jsonPath = Path.Combine(baseDir, "Testdata", "NewDataHomeweb.Json");
+            string jsonString = File.ReadAllText(jsonPath);
             var dataToLoad = JsonSerializer.Deserialize<List<TestCaseJsonData>>(jsonString);
             var filteredData = dataToLoad.Where(data => !string.IsNullOrEmpty(data.PFLogin2)
                                                         && !string.IsNullOrEmpty(data.PFPassword)

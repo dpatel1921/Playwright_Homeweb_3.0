@@ -11,6 +11,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Testcases_Homeweb\**" />
+    <EmbeddedResource Remove="Testcases_Homeweb\**" />
+    <None Remove="Testcases_Homeweb\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="coverlet.collector" Version="10.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -33,6 +39,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Testdata\DataFile.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Testdata\HomewebLoginData.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Testdata\NewDataHomeweb.Json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
